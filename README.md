@@ -6,6 +6,10 @@ Can be used for managine power point presentation from smartphone.
 
 ### How to use
 
+Before build, run:
+
+	go get github.com/micmonay/keybd_event
+
 Build executable, and just run.
 
 Program will show you IP adresses, which you can use, for example:
