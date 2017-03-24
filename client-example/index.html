@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="jquery.phoenix.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.but {
+		padding: 40px;
+		display:block;
+		
+	}
+</style>
+<script>
+	$(function(){
+		$('.js-send').on('click',function(){
+			var key = $(this).data('key');
+			var address = "http://"+$('.js-ipaddress').val() + ':8085/send'
+			$.post( address+"?key="+key,function(a){
+				 
+			})
+		})
+		
+		
+		$('.phoenix-input').phoenix();
+	})
+
+</script>
+</head>
+<body>
+<div>IP - адрес: <input type="text" class="js-ipaddress phoenix-input" value="192.168.1.36"></div>
+	<button class="but js-send" data-key="RIGHT">></button>
+	<button class="but js-send" data-key="LEFT"><</button>
+	<button class="but js-send" data-key="F5">F5</button>
+
+</body>
+
+</html>
