@@ -6,6 +6,8 @@ Can be used for managine power point presentation from smartphone.
 
 ### How to use
 
+Build binary or just [download prebuilt binary for Windows](https://github.com/ramainen/projecter/releases)
+
 Before build, run:
 
 	go get github.com/micmonay/keybd_event
